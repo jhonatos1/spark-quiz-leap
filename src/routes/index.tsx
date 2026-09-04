@@ -3,6 +3,7 @@ import { useState } from "react";
 import { CHECKOUT_URL, steps, type QuizStep } from "@/lib/quiz";
 import offerAntes from "@/assets/offer-antes.jpg";
 import offerDepois from "@/assets/offer-depois.jpg";
+import logo from "@/assets/logo.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -50,14 +51,16 @@ function QuizPage() {
   return (
     <div className="min-h-screen bg-background font-body text-ink">
       <div className="mx-auto w-full max-w-md px-4">
-        <header className="flex items-center gap-3 pt-5 pb-3">
-          <div className="grid size-11 shrink-0 place-items-center rounded-full bg-peach outline-1 -outline-offset-1 outline-black/5">
-            <span className="font-display text-base font-extrabold text-cocoa">S</span>
-          </div>
-          <div className="leading-tight">
-            <p className="font-display text-sm font-bold text-ink">Segredos Curativos</p>
-            <p className="text-xs font-medium text-cocoa/70">da Natureza</p>
-          </div>
+        <header className="flex justify-center pt-3 pb-2">
+          <img
+            src={logo}
+            alt="Segredos Curativos da Natureza"
+            width={965}
+            height={628}
+            className="h-auto w-[260px] max-w-full object-contain"
+            fetchPriority="high"
+            decoding="async"
+          />
         </header>
 
         {!isOffer && step?.kind === "question" && (
