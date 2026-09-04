@@ -6,9 +6,8 @@ import quizParabens from "@/assets/quiz-parabens.jpg";
 
 /**
  * URL do checkout para onde o botão final "Eu quero!" redireciona.
- * Substitua pelo link real do seu checkout (Hotmart, Kiwify, Stripe etc).
  */
-export const CHECKOUT_URL = "https://pay.exemplo.com/checkout-segredos-curativos";
+export const CHECKOUT_URL = "https://pay.kiwify.com.br/2QOHfhX";
 
 export type QuizOption = {
   label: string;
