@@ -1,35 +1,12 @@
-import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import { CHECKOUT_URL, steps, type QuizStep } from "@/lib/quiz";
 import offerAntes from "@/assets/offer-antes.jpg";
 import offerDepois from "@/assets/offer-depois.jpg";
 import logo from "@/assets/logo.png";
 
-export const Route = createFileRoute("/")({
-  head: () => ({
-    meta: [
-      { title: "Segredos Curativos da Natureza — Teste Gratuito" },
-      {
-        name: "description",
-        content:
-          "Responda o teste rápido e descubra como as 200 receitas naturais do livro Segredos Curativos da Natureza podem melhorar sua saúde.",
-      },
-      { property: "og:title", content: "Segredos Curativos da Natureza — Teste Gratuito" },
-      {
-        property: "og:description",
-        content:
-          "Responda o teste rápido e descubra como as 200 receitas naturais podem melhorar sua saúde.",
-      },
-      { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary_large_image" },
-    ],
-  }),
-  component: QuizPage,
-});
-
 const OPTION_LETTERS = ["A", "B", "C", "D", "E"];
 
-function QuizPage() {
+export default function QuizPage() {
   const [stepIndex, setStepIndex] = useState(0);
   const [selected, setSelected] = useState<number | null>(null);
 
