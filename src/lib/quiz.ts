@@ -10,6 +10,7 @@ import quizParabens from "@/assets/quiz-parabens.jpg";
 export const CHECKOUT_URL = "https://pay.kiwify.com.br/2QOHfhX";
 
 export type QuizOption = {
+  emoji: string;
   label: string;
   subtitle?: string;
 };
@@ -60,7 +61,7 @@ export const steps: QuizStep[] = [
     progressPercent: 16,
     title: "Vamos começar.",
     subtitle: "Escolha a opção abaixo.",
-    options: [{ label: "Homem" }, { label: "Mulher" }],
+    options: [{ emoji: "👨", label: "Homem" }, { emoji: "👩", label: "Mulher" }],
     footerNote:
       "Ao iniciar o teste, você concorda com os nossos Termos de Uso e Políticas de Privacidade.",
   },
@@ -73,7 +74,7 @@ export const steps: QuizStep[] = [
       "Que utilizar os ingredientes certos pode aliviar dores, aumentar sua imunidade, tratar doenças, alergias e outras enfermidades sem precisar de farmácia?",
     image: quizIngredients,
     imageAlt: "Ingredientes naturais: gengibre, cúrcuma, camomila, hortelã, mel e canela",
-    options: [{ label: "Sabia 👍" }, { label: "Não Sabia 👎" }],
+    options: [{ emoji: "👍", label: "Sabia" }, { emoji: "👎", label: "Não Sabia" }],
   },
   {
     kind: "question",
@@ -82,12 +83,12 @@ export const steps: QuizStep[] = [
     title: "E me diz uma coisa, qual é seu objetivo com as receitas?",
     subtitle: "Escolha a opção abaixo.",
     options: [
-      { label: "Aliviar dores no corpo, e nas articulações" },
-      { label: "Melhorar minha ansiedade e dormir melhor" },
-      { label: "Diminuir o inchaço e soltar o intestino" },
-      { label: "Cuidar da pressão e do coração" },
+      { emoji: "🦴", label: "Aliviar dores no corpo, e nas articulações" },
+      { emoji: "😴", label: "Melhorar minha ansiedade e dormir melhor" },
+      { emoji: "🚽", label: "Diminuir o inchaço e soltar o intestino" },
+      { emoji: "❤️", label: "Cuidar da pressão e do coração" },
       {
-        label: "Outros problemas",
+        emoji: "🩺", label: "Outros problemas",
         subtitle:
           "Por exemplo: controlar o açúcar no sangue, melhorar imunidade ou simplesmente usar os chás pra ter uma rotina mais saudável.",
       },
@@ -100,11 +101,11 @@ export const steps: QuizStep[] = [
     title: "E como é que você cuida da sua saúde hoje em dia?",
     subtitle: "Escolha a opção abaixo.",
     options: [
-      { label: "Tomo muito remédio" },
-      { label: "Tento me cuidar com coisas naturais" },
-      { label: "Faz tempo que não cuido de mim" },
-      { label: "Faço de outro jeito" },
-      { label: "Outra" },
+      { emoji: "💊", label: "Tomo muito remédio" },
+      { emoji: "🌿", label: "Tento me cuidar com coisas naturais" },
+      { emoji: "⏳", label: "Faz tempo que não cuido de mim" },
+      { emoji: "🔄", label: "Faço de outro jeito" },
+      { emoji: "💬", label: "Outra" },
     ],
   },
   {
@@ -114,11 +115,11 @@ export const steps: QuizStep[] = [
     title: "E seja sincero: tá satisfeito com a sua saúde do jeito que tá?",
     subtitle: "Escolha a opção abaixo.",
     options: [
-      { label: "Sim, muito satisfeito!" },
-      { label: "Um pouco satisfeito..." },
-      { label: "Quase nada satisfeito..." },
-      { label: "Totalmente insatisfeito." },
-      { label: "Outra" },
+      { emoji: "😄", label: "Sim, muito satisfeito!" },
+      { emoji: "🙂", label: "Um pouco satisfeito..." },
+      { emoji: "😕", label: "Quase nada satisfeito..." },
+      { emoji: "😞", label: "Totalmente insatisfeito." },
+      { emoji: "💬", label: "Outra" },
     ],
   },
   {
@@ -128,7 +129,7 @@ export const steps: QuizStep[] = [
     title: "Quer ter acesso a 200 receitas simples para melhorar sua saúde de forma natural?",
     image: quizEbook,
     imageAlt: "Capa do eBook Segredos Curativos da Natureza",
-    options: [{ label: "Quero!" }, { label: "Com certeza!" }],
+    options: [{ emoji: "🙋", label: "Quero!" }, { emoji: "🤩", label: "Com certeza!" }],
   },
   {
     kind: "benefits",
@@ -155,6 +156,6 @@ export const steps: QuizStep[] = [
       "Pelo que você respondeu, as receitas do Segredos Curativos da Natureza vão sim te ajudar a ter uma saúde melhor!",
     image: quizParabens,
     imageAlt: "Mulher sorrindo enquanto toma um chá natural",
-    options: [{ label: "Sim, Ministro!" }, { label: "Claro que sim!" }],
+    options: [{ emoji: "🫡", label: "Sim, Ministro!" }, { emoji: "🙌", label: "Claro que sim!" }],
   },
 ];
