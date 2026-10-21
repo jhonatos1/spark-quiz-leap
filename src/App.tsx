@@ -1,5 +1,6 @@
+import { getCheckoutUrl } from "@/lib/checkout";
 import { useState } from "react";
-import { CHECKOUT_URL, steps, type QuizStep } from "@/lib/quiz";
+import { steps, type QuizStep } from "@/lib/quiz";
 import offerAntes from "@/assets/offer-antes.jpg";
 import offerDepois from "@/assets/offer-depois.jpg";
 import logo from "@/assets/logo.png";
@@ -279,7 +280,7 @@ function OfferScreen() {
           Aperte no botão abaixo para garantir seu eBook
         </p>
         <a
-          href={CHECKOUT_URL}
+          href={getCheckoutUrl(window.location.search)}
           className="mt-3 flex w-full items-center justify-center gap-2 rounded-full bg-brand py-4 font-display text-lg font-bold text-cream ring-1 ring-brand-dark/30 transition-transform duration-150 active:scale-[.98]"
         >
           Eu quero!

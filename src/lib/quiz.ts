@@ -7,7 +7,7 @@ import quizParabens from "@/assets/quiz-parabens.jpg";
 /**
  * URL do checkout para onde o botão final "Eu quero!" redireciona.
  */
-export const CHECKOUT_URL = "https://pay.kiwify.com.br/2QOHfhX";
+export { CHECKOUT_URL } from "./checkout";
 
 export type QuizOption = {
   emoji: string;

@@ -47,3 +47,12 @@ A saída publicável fica em `dist/` e não é versionada.
 - `src/styles.css`: cores e estilos.
 
 As escolhas avançam para a próxima etapa; não há coleta nem persistência das respostas. Recarregar a página reinicia o quiz. O checkout é externo, operado pela Kiwify.
+
+## Divulgação por afiliado
+
+- Link direto do produtor: `https://spark-quiz-leap.pages.dev/`.
+- Link do afiliado cadastrado: `https://spark-quiz-leap.pages.dev/?afid=GTAv1Ygf`.
+
+O quiz encaminha apenas o identificador autorizado na URL atual para o mesmo checkout Kiwify. O botão final de uma visita sem esse parâmetro permanece sem identificador de afiliado. Não há gravação de afiliação em cookies ou armazenamento pelo quiz; parâmetros desconhecidos ou duplicados não são encaminhados. Isso não apaga cookies existentes da Kiwify: a comissão final e as regras de atribuição são determinadas pela plataforma. Novos afiliados devem ser incluídos explicitamente na lista de `src/lib/checkout.ts`.
+
+Validação da montagem do checkout: `node --test tests/checkout.test.mjs` (Node.js 24).
