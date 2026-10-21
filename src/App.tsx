@@ -3,7 +3,7 @@ import { useState } from "react";
 import { steps, type QuizStep } from "@/lib/quiz";
 import offerAntes from "@/assets/offer-antes.jpg";
 import offerDepois from "@/assets/offer-depois.jpg";
-import logo from "@/assets/logo.png";
+import logo from "@/assets/header-dupla.webp";
 
 export default function QuizPage() {
   const [stepIndex, setStepIndex] = useState(0);
@@ -30,10 +30,10 @@ export default function QuizPage() {
         <header className="flex justify-center pt-3 pb-2">
           <img
             src={logo}
-            alt="Segredos Curativos da Natureza"
-            width={965}
-            height={628}
-            className="h-auto w-[260px] max-w-full object-contain"
+            alt="Segredos Curativos da Natureza — os dois personagens da página"
+            width={1536}
+            height={1024}
+            className="h-auto w-[340px] max-w-full object-contain"
             fetchPriority="high"
             decoding="async"
           />
