@@ -115,7 +115,9 @@ export default function QuizPage() {
                         isSelected ? "bg-brand text-cream" : "bg-mint text-ink/70"
                       }`}
                     >
-                      {opt.emoji}
+                      {opt.emojiImage ? (
+                        <img src={opt.emojiImage} alt="" width={28} height={28} className="size-7" />
+                      ) : opt.emoji}
                     </span>
                     <span>
                       <span className="block font-display text-base font-semibold text-ink">

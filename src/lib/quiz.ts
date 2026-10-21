@@ -1,8 +1,9 @@
+import emojiPositivo from "@/assets/emoji-positivo.svg";
 import quizIntro from "@/assets/quiz-intro.jpg";
 import quizIngredients from "@/assets/quiz-ingredients.jpg";
 import quizEbook from "@/assets/quiz-ebook-sem-boneco.webp";
 import quizBenefits from "@/assets/quiz-benefits.jpg";
-import quizParabens from "@/assets/quiz-parabens.jpg";
+import quizParabens from "@/assets/quiz-parabens-dupla.webp";
 
 /**
  * URL do checkout para onde o botão final "Eu quero!" redireciona.
@@ -11,6 +12,7 @@ export { CHECKOUT_URL } from "./checkout";
 
 export type QuizOption = {
   emoji: string;
+  emojiImage?: string;
   label: string;
   subtitle?: string;
 };
@@ -155,7 +157,7 @@ export const steps: QuizStep[] = [
     subtitle:
       "Pelo que você respondeu, as receitas do Segredos Curativos da Natureza vão sim te ajudar a ter uma saúde melhor!",
     image: quizParabens,
-    imageAlt: "Mulher sorrindo enquanto toma um chá natural",
-    options: [{ emoji: "🫡", label: "Sim, Ministro!" }, { emoji: "🙌", label: "Claro que sim!" }],
+    imageAlt: "Os dois personagens sorrindo e comemorando juntos",
+    options: [{ emoji: "👍", emojiImage: emojiPositivo, label: "Sim, Ministro!" }, { emoji: "🙌", label: "Claro que sim!" }],
   },
 ];
