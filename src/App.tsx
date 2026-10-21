@@ -258,7 +258,7 @@ function OfferScreen() {
       <div className="step-anim mt-6 rounded-3xl bg-peach/60 p-5 ring-1 ring-brand/20" style={{ animationDelay: "260ms" }}>
         <h2 className="font-display text-xl font-bold text-ink">Valor Promocional</h2>
         <p className="mt-1 text-sm text-cocoa">
-          Esse valor promocional de <strong>R$ 7,90</strong> vai subir para <strong>R$ 39,99</strong> nas próximas 24 horas. Então aproveita!
+          Esse valor promocional de <strong>R$ 19,99</strong> vai subir para <strong>R$ 39,99</strong> nas próximas 24 horas. Então aproveita!
         </p>
       </div>
 
@@ -272,7 +272,7 @@ function OfferScreen() {
       <div className="step-anim mt-6 rounded-3xl bg-white/80 p-5 ring-1 ring-cocoa/10" style={{ animationDelay: "380ms" }}>
         <div className="text-center">
           <span className="text-sm text-cocoa/60 line-through">De R$ 39,99 por apenas</span>
-          <div className="font-display text-5xl font-extrabold leading-none text-ink text-balance">R$ 7,90</div>
+          <div className="font-display text-5xl font-extrabold leading-none text-ink text-balance">R$ 19,99</div>
           <span className="text-xs font-medium text-cocoa/70">pagamento único · acesso vitalício</span>
         </div>
         <p className="mt-4 text-center font-display text-base font-semibold text-ink">
