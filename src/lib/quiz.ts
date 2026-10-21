@@ -1,6 +1,6 @@
 import quizIntro from "@/assets/quiz-intro.jpg";
 import quizIngredients from "@/assets/quiz-ingredients.jpg";
-import quizEbook from "@/assets/quiz-ebook.jpg";
+import quizEbook from "@/assets/quiz-ebook-sem-boneco.webp";
 import quizBenefits from "@/assets/quiz-benefits.jpg";
 import quizParabens from "@/assets/quiz-parabens.jpg";
 
